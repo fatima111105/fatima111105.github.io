@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sobre mí</title>
+    <meta name="description" content="Página sobre el autor.">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header container">
+      <a class="brand" href="/">TuNombre</a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/about.html">Sobre mí</a></li>
+          <li><a href="/projects.html">Proyectos</a></li>
+          <li><a href="/contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Sobre mí</h1>
+      <p>Escribe aquí una breve biografía, experiencia y enlaces relevantes.</p>
+    </main>
+    <footer class="site-footer container">
+      <p>&copy; <span id="year"></span> TuNombre.</p>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
