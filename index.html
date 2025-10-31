@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>La Tavola - Restaurante Italiano</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#home">La Tavola</a>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#gallery">Imágenes</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contactar</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn primary" id="reserveBtn">Reservar</button>
+        <a class="btn outline" id="whatsappBtn" href="https://wa.me/34123456789?text=Hola%20La%20Tavola" target="_blank">WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+  <section id="home" class="hero" style="background-image: url('https://cdn.pixabay.com/photo/2021/12/07/14/32/italian-cuisine-6853411_1280.jpg');">
+      <div class="hero-overlay container">
+        <h1 class="hero-title">La Tavola</h1>
+        <p class="hero-sub">Auténtica cocina italiana — tradición y sabor en cada plato</p>
+        <div class="hero-cta">
+          <button class="btn primary" id="ctaReserve">Reserva ahora</button>
+          <button class="btn" id="ctaOrder">Pedir online</button>
+          <button class="btn outline" id="downloadMenu">Descargar menú (PDF)</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section about">
+      <div class="about-left">
+        <h2>Sobre La Tavola <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg" alt="Bandera de Italia" class="flag"></h2>
+        <p>La Tavola nace de la pasión por la cocina tradicional italiana. Fundado en 1998 por la familia Rossi, combinamos recetas familiares con productos frescos y un ambiente acogedor. Nuestra misión: ofrecer platos honestos con ingredientes de primera calidad.</p>
+        <p>Proceso de creación según Cristina Ferris: recogemos textos, imágenes y trabajamos el tono para que la web refleje la identidad del restaurante.</p>
+      </div>
+      <div class="about-right">
+        <!-- espacio intencionalmente vacío -->
+      </div>
+    </section>
+
+    <section id="services" class="container section services">
+      <h2>Servicios</h2>
+      <div class="cards">
+        <div class="card"><h3>Reservas</h3><p>Reserva mesa online para cenas, eventos o celebraciones.</p></div>
+        <div class="card"><h3>Pedir online</h3><p>Pedido a domicilio y para recoger en local.</p></div>
+        <div class="card"><h3>Eventos</h3><p>Menús especiales y catering para grupos.</p></div>
+        <div class="card"><h3>Suscripciones</h3><p>Promociones y ofertas exclusivas por email.</p></div>
+      </div>
+    </section>
+
+    <section id="menu" class="container section menu">
+      <h2>Menú</h2>
+      <p class="muted">Selecciona los platos para añadir al pedido o a la reserva. Usa los botones para filtrar por categoría.</p>
+      <div class="menu-controls">
+        <button class="btn" data-filter="all">Todos</button>
+        <button class="btn" data-filter="Antipasti">Antipasti</button>
+        <button class="btn" data-filter="Primi Piatti">Primi</button>
+        <button class="btn" data-filter="Secondi Piatti">Secondi</button>
+        <button class="btn" data-filter="Pizze Tradizionali">Pizze</button>
+        <button class="btn" data-filter="Dolci">Dolci</button>
+        <button class="btn" data-filter="Bevande">Bevande</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <!-- Items agregados por JS -->
+      </div>
+      <aside class="cart" id="cart">
+        <h3>Pedido / Reserva</h3>
+        <div id="cartItems"></div>
+        <div class="cart-actions">
+          <strong>Total: €<span id="cartTotal">0.00</span></strong>
+          <button class="btn primary" id="checkout">Pagar</button>
+        </div>
+      </aside>
+    </section>
+
+    <section id="gallery" class="container section gallery">
+      <h2>Imágenes</h2>
+      <p class="muted">Platos destacados y ambiente</p>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Imágenes generadas por JS -->
+      </div>
+    </section>
+
+    <section id="faq" class="container section faq">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Puedo reservar online?</summary>
+        <p>Sí, completa el formulario de reserva y recibirás confirmación por email y/o teléfono.</p>
+      </details>
+      <details>
+        <summary>¿Ofrecen opciones vegetarianas?</summary>
+        <p>Sí, tenemos opciones vegetarianas y podemos adaptar platos por alergias.</p>
+      </details>
+      <details>
+        <summary>¿Cómo puedo descargar el menú?</summary>
+        <p>Pulsa el botón "Descargar menú (PDF)" para obtener el PDF del menú completo.</p>
+      </details>
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h2>Contacto y reservas</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>Reservar mesa</h3>
+          <form id="reserveForm">
+            <label>Nombre<input type="text" id="r_name" required></label>
+            <label>Teléfono<input type="tel" id="r_phone" required pattern="[0-9+()\-\s]{6,}" title="Número de teléfono"></label>
+            <label>Fecha y hora<input type="datetime-local" id="r_datetime" required></label>
+            <label>Personas<select id="r_people"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></label>
+            <label>Comentarios<textarea id="r_notes"></textarea></label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Enviar reserva</button>
+            </div>
+          </form>
+        </div>
+        <div>
+          <h3>Contacto rápido</h3>
+          <p>Tel: <a href="tel:+34123456789">+34 123 456 789</a></p>
+          <p>WhatsApp: <a id="waLink" href="https://wa.me/34123456789?text=Hola%20La%20Tavola" target="_blank">Enviar mensaje</a></p>
+          <h4>Suscríbete</h4>
+          <form id="subscribeForm">
+            <input type="email" id="sub_email" placeholder="tu@email.com" required>
+            <button class="btn" type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-left">
+      <strong>La Tavola</strong>
+      <p>Calle Falsa 123 · Ciudad · Horario: 12:00–23:00</p>
+    </div>
+    <div class="footer-right">
+      <a href="#">Aviso legal</a>
+      <a href="#">Política de privacidad</a>
+      <a href="#">Cookies</a>
+    </div>
+  </footer>
+
+  <!-- jsPDF para exportar PDF -->
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+// aver si cambia algo.
