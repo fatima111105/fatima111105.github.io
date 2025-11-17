@@ -1,24 +1,24 @@
 // Menú proporcionado por el usuario, corregido y completado
 const menuItems = [
-  {id:1,category:'Antipasti',name:'Bruschetta al Pomodoro',desc:'Pan tostado con tomate fresco, ajo, albahaca y aceite de oliva virgen extra.',price:4.50,img:'https://copilot.microsoft.com/th/id/BCO.313c6832-cfe2-448f-b901-4c07c0c60525.png'},
-  {id:2,category:'Antipasti',name:'Carpaccio di Manzo',desc:'Finas láminas de ternera con rúcula, parmesano y aderezo de limón.',price:9.00,img:'https://copilot.microsoft.com/th/id/BCO.35c4feb2-1c9b-4416-9c78-60e0862d1aa2.png'},
-  {id:3,category:'Antipasti',name:'Caprese',desc:'Mozzarella de búfala, tomate y albahaca fresca con reducción de balsámico.',price:7.00,img:'https://copilot.microsoft.com/th/id/BCO.d315f5d7-4441-455e-a466-d3b83a0c1886.png'},
-  {id:4,category:'Primi Piatti',name:'Spaghetti alla Carbonara',desc:'Con panceta, huevo, queso pecorino y pimienta negra.',price:8.50,img:'https://copilot.microsoft.com/th/id/BCO.a058901c-9067-4de3-a08f-25b67d1259ba.png'},
-  {id:5,category:'Primi Piatti',name:'Tagliatelle al Ragù (Boloñesa)',desc:'Pasta fresca con salsa de carne cocinada lentamente.',price:9.50,img:'https://copilot.microsoft.com/th/id/BCO.d76f4d6e-04d4-49dc-9530-0635e45aaded.png'},
-  {id:6,category:'Primi Piatti',name:'Risotto ai Funghi Porcini',desc:'Arroz cremoso con setas porcini y parmesano.',price:11.00,img:'https://copilot.microsoft.com/th/id/BCO.2b0c9cb4-45ac-465f-af3a-82f96fce336e.png'},
-  {id:7,category:'Secondi Piatti',name:'Saltimbocca alla Romana',desc:'Ternera con jamón serrano y salvia en salsa de vino blanco.',price:14.00,img:'https://copilot.microsoft.com/th/id/BCO.1b5f2d15-cf7f-4d31-ac0c-cd85b08ae340.png'},
-  {id:8,category:'Secondi Piatti',name:'Pollo al Limone',desc:'Pechuga de pollo en salsa de limón y hierbas mediterráneas.',price:12.00,img:'https://copilot.microsoft.com/th/id/BCO.ae8482e7-5f4b-4536-a173-9500bac0f87c.png'},
-  {id:9,category:'Secondi Piatti',name:'Melanzane alla Parmigiana',desc:'Berenjenas al horno con tomate, mozzarella y parmesano.',price:10.50,img:'https://copilot.microsoft.com/th/id/BCO.b112f43f-0d8a-4ea8-b0cf-1afb1cc1bbd8.png'},
-  {id:10,category:'Pizze Tradizionali',name:'Margherita',desc:'Tomate, mozzarella y albahaca',price:8.00,img:'https://copilot.microsoft.com/th/id/BCO.2ecfa89b-ce57-4283-9c6c-d886a1c55380.png'},
-  {id:11,category:'Pizze Tradizionali',name:'Quattro Formaggi',desc:'Mezcla de mozzarella, gorgonzola, parmesano y fontina.',price:10.00,img:'https://copilot.microsoft.com/th/id/BCO.fef9ea99-102b-4319-bc5c-61800774a983.png'},
-  {id:12,category:'Pizze Tradizionali',name:'Prosciutto e Funghi',desc:'Jamón cocido y champiñones sobre base de tomate.',price:9.50,img:'https://copilot.microsoft.com/th/id/BCO.550b5a44-d612-4a16-96bf-a99f601c3f67.png'},
-  {id:13,category:'Dolci',name:'Tiramisù',desc:'Clásico postre italiano con café, mascarpone y cacao.',price:5.00,img:'https://copilot.microsoft.com/th/id/BCO.234c53c3-c677-4b0e-8b0d-c3b1364cc453.png'},
-  {id:14,category:'Dolci',name:'Panna Cotta',desc:'Flan de nata con coulis de frutos rojos.',price:4.50,img:'https://copilot.microsoft.com/th/id/BCO.d355c109-4dc5-41c1-97f0-636ea4767dd5.png'},
-  {id:15,category:'Dolci',name:'Cannoli Siciliani',desc:'Rellenos de ricotta dulce con trozos de chocolate.',price:5.50,img:'https://copilot.microsoft.com/th/id/BCO.3bc4cae7-0f98-4105-a6a4-6723293559a3.png'},
-  {id:16,category:'Bevande',name:'Vino Chianti (copa)',desc:'Vino tinto italiano',price:4.50,img:'https://copilot.microsoft.com/th/id/BCO.1e0c5edd-d607-41de-82cf-63835d756212.png'},
-  {id:17,category:'Bevande',name:'Aperol Spritz',desc:'Aperitivo clásico',price:5.00,img:'https://copilot.microsoft.com/th/id/BCO.e399535a-e4ad-4395-b312-b333279299a9.png'},
-  {id:18,category:'Bevande',name:'Espresso',desc:'Café espresso italiano',price:1.80,img:'https://copilot.microsoft.com/th/id/BCO.967656d8-cb78-46d8-aaee-bc693e23f4eb.png'},
-  {id:19,category:'Bevande',name:'Agua mineral',desc:'Agua mineral',price:1.50,img:'https://copilot.microsoft.com/th/id/BCO.bf529d20-61e3-465e-87ca-f28d21559bb3.png'}
+  {id:1,category:'Antipasti',name:'Bruschetta al Pomodoro',desc:'Pan tostado con tomate fresco, ajo, albahaca y aceite de oliva virgen extra.',price:4.50,img:'/IMÁGENES/Bruschetta al Pomodoro.webp'},
+  {id:2,category:'Antipasti',name:'Carpaccio di Manzo',desc:'Finas láminas de ternera con rúcula, parmesano y aderezo de limón.',price:9.00,img:'/IMÁGENES/Carpaccio di Manzo.webp'},
+  {id:3,category:'Antipasti',name:'Caprese',desc:'Mozzarella de búfala, tomate y albahaca fresca con reducción de balsámico.',price:7.00,img:'/IMÁGENES/Caprese.webp'},
+  {id:4,category:'Primi Piatti',name:'Spaghetti alla Carbonara',desc:'Con panceta, huevo, queso pecorino y pimienta negra.',price:8.50,img:'/IMÁGENES/Spaghetti alla Carbonara.webp'},
+  {id:5,category:'Primi Piatti',name:'Tagliatelle al Ragù (Boloñesa)',desc:'Pasta fresca con salsa de carne cocinada lentamente.',price:9.50,img:'/IMÁGENES/Tagliatelle al Ragù (Boloñesa).webp'},
+  {id:6,category:'Primi Piatti',name:'Risotto ai Funghi Porcini',desc:'Arroz cremoso con setas porcini y parmesano.',price:11.00,img:'/IMÁGENES/Risotto ai Funghi Porcini.webp'},
+  {id:7,category:'Secondi Piatti',name:'Saltimbocca alla Romana',desc:'Ternera con jamón serrano y salvia en salsa de vino blanco.',price:14.00,img:'/IMÁGENES/Saltimbocca alla Romana.webp'},
+  {id:8,category:'Secondi Piatti',name:'Pollo al Limone',desc:'Pechuga de pollo en salsa de limón y hierbas mediterráneas.',price:12.00,img:'/IMÁGENES/Pollo al Limone.webp'},
+  {id:9,category:'Secondi Piatti',name:'Melanzane alla Parmigiana',desc:'Berenjenas al horno con tomate, mozzarella y parmesano.',price:10.50,img:'/IMÁGENES/Melanzane alla Parmigiana.webp'},
+  {id:10,category:'Pizze Tradizionali',name:'Margherita',desc:'Tomate, mozzarella y albahaca',price:8.00,img:'/IMÁGENES/Margherita.webp'},
+  {id:11,category:'Pizze Tradizionali',name:'Quattro Formaggi',desc:'Mezcla de mozzarella, gorgonzola, parmesano y fontina.',price:10.00,img:'/IMÁGENES/Quattro Formaggi.webp'},
+  {id:12,category:'Pizze Tradizionali',name:'Prosciutto e Funghi',desc:'Jamón cocido y champiñones sobre base de tomate.',price:9.50,img:'/IMÁGENES/Prosciutto e Funghi.webp'},
+  {id:13,category:'Dolci',name:'Tiramisù',desc:'Clásico postre italiano con café, mascarpone y cacao.',price:5.00,img:'/IMÁGENES/Tiramisù.webp'},
+  {id:14,category:'Dolci',name:'Panna Cotta',desc:'Flan de nata con coulis de frutos rojos.',price:4.50,img:'/IMÁGENES/Panna Cotta.webp'},
+  {id:15,category:'Dolci',name:'Cannoli Siciliani',desc:'Rellenos de ricotta dulce con trozos de chocolate.',price:5.50,img:'/IMÁGENES/Cannoli Siciliani.webp'},
+  {id:16,category:'Bevande',name:'Vino Chianti (copa)',desc:'Vino tinto italiano',price:4.50,img:'/IMÁGENES/Vino Chianti (copa).webp'},
+  {id:17,category:'Bevande',name:'Aperol Spritz',desc:'Aperitivo clásico',price:5.00,img:'/IMÁGENES/Aperol Spritz.webp'},
+  {id:18,category:'Bevande',name:'Espresso',desc:'Café espresso italiano',price:1.80,img:'/IMÁGENES/Espresso.webp'},
+  {id:19,category:'Bevande',name:'Agua mineral',desc:'Agua mineral',price:1.50,img:'/IMÁGENES/Agua mineral.webp'}
 ];
 
 const cart = [];
